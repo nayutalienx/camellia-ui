@@ -1,0 +1,30 @@
+.header {
+    height: 50px;
+    background: black;
+    display: flex;
+    color: aliceblue;
+    font-size: 35px;
+
+    padding: 5px;
+}
+
+.header-item {
+    margin-right: 5px;
+    display: flex;
+}
+
+.header-item:hover {
+    color: brown;
+    cursor: pointer;
+}
+
+.header-search {
+    width: 1300px;
+    height: 30px;
+    align-self: center;
+}
+
+.header-logo {
+    width: 60px;
+}
+
