@@ -1,0 +1,15 @@
+.user-mini-info {
+
+    height: 260px;
+
+    background: #e9f7fb;
+    border: 1px solid rgba(144, 213, 236, 0.45);
+
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+
+    width: 260px;
+
+}
+
