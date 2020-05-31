@@ -1,6 +1,7 @@
 import * as React from "react";
 import "./TrendFeed.css"
 import TrendItem from "./TrendItem";
+import Bookmark from "../../common/Bookmark";
 
 class TrendFeed extends React.Component {
 
@@ -11,9 +12,9 @@ class TrendFeed extends React.Component {
 
     render() {
         return (
-            <div className="trend-feed pl-2 pr-2 pt-1">
-                <h4 className="pl-2 trend-feed-header">Сейчас играют</h4>
-                <div className="d-flex justify-content-around">
+            <div className="trend-feed pl-3 pr-3 pt-1 mt-2">
+                <Bookmark text="СЕЙЧАС ИГРАЮТ" style="default"/>
+                <div className="d-flex justify-content-between">
                     <TrendItem name="1"/>
                     <TrendItem name="2"/>
                     <TrendItem name="3"/>
