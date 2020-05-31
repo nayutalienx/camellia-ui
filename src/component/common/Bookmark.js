@@ -30,6 +30,11 @@ class Bookmark extends React.Component {
                 background: "#DAF1FF",
                 color: "#44BBFF",
                 borderLeft: "5px solid #BCE6FF"
+            },
+            "green": {
+                background: "#E7F6DA",
+                color: "#74d61f",
+                borderLeft: "5px solid #D7EFC3"
             }
         }
 
@@ -45,6 +50,9 @@ class Bookmark extends React.Component {
 
         if (this.props.style === "blue")
             styleToUse = styles.blue
+
+        if (this.props.style === "green")
+            styleToUse = styles.green
 
         var linkTextColor = {
             color: styleToUse.color
