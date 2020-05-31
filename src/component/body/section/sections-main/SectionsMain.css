@@ -1,6 +1,19 @@
-.sectionsMain {
+.sections-main {
     margin-left: 20px;
     width: 535px;
-    border: 1px solid red;
+
     height: 260px;
+}
+
+.sections-main-link {
+    vertical-align: top;
+    line-height: 0.9;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.sections-main-link:hover {
+    color: darkorange;
+    cursor: pointer;
 }
