@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "./Header";
-import Footer from "./Footer";
 import Body from "./body/Body";
 
 /**
@@ -19,7 +18,6 @@ class Main extends React.Component {
             <div>
                 <Header/>
                 <Body/>
-                <Footer/>
             </div>
         );
     }

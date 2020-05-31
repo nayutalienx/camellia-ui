@@ -2,12 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b183be8-377a-49e9-9b53-3b2621fa4c73" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/component/common/Bookmark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/common/Bookmark.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/body/footer/Footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/body/section/forum-info/ForumInfo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/body/section/forum-info/ForumInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/body/section/forum-info/ForumInfoItem.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/body/section/forum-info/ForumInfoItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/body/section/sections-main/sections-button/SectionsButton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/body/section/sections-main/sections-button/SectionsButton.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/body/trend/TrendFeed.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/body/trend/TrendFeed.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/body/trend/TrendFeed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/body/trend/TrendFeed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/body/footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/body/Body.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/body/Body.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/body/section/Sections.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/body/section/Sections.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/body/section/sections-main/SectionsMain.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/body/section/sections-main/SectionsMain.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/body/section/sections-main/SectionsMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/body/section/sections-main/SectionsMain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/body/section/user-mini-info/UserMiniInfoItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/body/section/user-mini-info/UserMiniInfoItem.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/common/Bookmark.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/common/Bookmark.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +68,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\что-то осознанное\camellia-ui\src\component\body\footer" />
       <recent name="D:\что-то осознанное\camellia-ui\src\component\body\section\userminiinfo" />
       <recent name="D:\что-то осознанное\camellia-ui\src\component\body\section" />
       <recent name="D:\что-то осознанное\camellia-ui\src\component\body\trend" />

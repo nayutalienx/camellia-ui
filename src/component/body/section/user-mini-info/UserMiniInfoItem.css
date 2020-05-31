@@ -6,3 +6,9 @@
 a {
     color: #176093;
 }
+
+.topics-count {
+    color: gray;
+    font-weight: bolder;
+    vertical-align: bottom;
+}
