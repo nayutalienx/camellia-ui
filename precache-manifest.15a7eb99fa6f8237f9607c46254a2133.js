@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2f46df62dbc6d744727f304b4a84f169",
+    "revision": "beae41ffe73964275d1495f45a7bb449",
     "url": "/camellia-ui/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/camellia-ui/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "face242f95b2f2caf02d",
-    "url": "/camellia-ui/static/css/main.dc6f6c1e.chunk.css"
+    "revision": "6432c194ac0df0c8b091",
+    "url": "/camellia-ui/static/css/main.71be9d07.chunk.css"
   },
   {
     "revision": "5dcc13d475a924d57f14",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/camellia-ui/static/js/2.99609234.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "face242f95b2f2caf02d",
-    "url": "/camellia-ui/static/js/main.a7a08a72.chunk.js"
+    "revision": "6432c194ac0df0c8b091",
+    "url": "/camellia-ui/static/js/main.afe47712.chunk.js"
   },
   {
     "revision": "fc5d8c463f1ca971adf4",
