@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5b183be8-377a-49e9-9b53-3b2621fa4c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1590876334985</updated>
       <workItem from="1590876337189" duration="6113000" />
-      <workItem from="1590909247112" duration="12941000" />
+      <workItem from="1590909247112" duration="13688000" />
     </task>
     <task id="LOCAL-00001" summary="Сделал структуру проекта + простую шапку">
       <created>1590882309585</created>
@@ -138,9 +137,9 @@
       <screen x="-1920" y="0" width="1920" height="1050" />
     </state>
     <state width="1899" height="310" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1590924528334" />
-    <state x="-1368" y="257" key="Vcs.Push.Dialog.v2" timestamp="1590925090811">
+    <state x="-1368" y="257" key="Vcs.Push.Dialog.v2" timestamp="1590925892959">
       <screen x="-1920" y="0" width="1920" height="1050" />
     </state>
-    <state x="-1368" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1590925090811" />
+    <state x="-1368" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1590925892959" />
   </component>
 </project>
