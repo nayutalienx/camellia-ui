@@ -1,6 +1,7 @@
 import React from "react";
 import './Header.css'
 import logo from '../logo.svg'
+import "bootstrap/dist/css/bootstrap.min.css"
 
 /**
  * Шапка страницы
@@ -15,20 +16,18 @@ class Header extends React.Component {
     render() {
 
         return (
-            <header className="header">
+            <header className="d-flex justify-content-around header">
                 <img src={logo} className="header-logo"/>
 
-                <div className="header-item">
+                <div className="header-item align-self-center">
                     Основная
                 </div>
 
-                <input className="header-search"/>
+                <input className="flex-fill ml-2 mr-2 header-search" placeholder="Поиск ..."/>
 
-                <div className="header-item">
-                    <img src={logo} className="header-logo"/>
-                    <div className="header-profile-item">
-                        Мой профиль
-                    </div>
+                <img src={logo} className="header-logo"/>
+                <div className="header-item align-self-center">
+                    Мой профиль
                 </div>
             </header>
         );
