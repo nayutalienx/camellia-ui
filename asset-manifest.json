@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/camellia-ui/static/css/main.dc6f6c1e.chunk.css",
+    "main.js": "/camellia-ui/static/js/main.a7a08a72.chunk.js",
+    "main.js.map": "/camellia-ui/static/js/main.a7a08a72.chunk.js.map",
+    "runtime-main.js": "/camellia-ui/static/js/runtime-main.2b5fd897.js",
+    "runtime-main.js.map": "/camellia-ui/static/js/runtime-main.2b5fd897.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/camellia-ui/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.99609234.chunk.js": "/camellia-ui/static/js/2.99609234.chunk.js",
+    "static/js/2.99609234.chunk.js.map": "/camellia-ui/static/js/2.99609234.chunk.js.map",
+    "index.html": "/camellia-ui/index.html",
+    "precache-manifest.a26494b1e284cc9e800fce3bf876bbd8.js": "/camellia-ui/precache-manifest.a26494b1e284cc9e800fce3bf876bbd8.js",
+    "service-worker.js": "/camellia-ui/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/camellia-ui/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.dc6f6c1e.chunk.css.map": "/camellia-ui/static/css/main.dc6f6c1e.chunk.css.map",
+    "static/js/2.99609234.chunk.js.LICENSE.txt": "/camellia-ui/static/js/2.99609234.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/camellia-ui/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2b5fd897.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.99609234.chunk.js",
+    "static/css/main.dc6f6c1e.chunk.css",
+    "static/js/main.a7a08a72.chunk.js"
+  ]
+}
