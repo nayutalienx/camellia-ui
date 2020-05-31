@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b183be8-377a-49e9-9b53-3b2621fa4c73" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/component/common/Bookmark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/common/Bookmark.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/body/trend/TrendFeed.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/body/trend/TrendFeed.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/body/trend/TrendFeed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/body/trend/TrendFeed.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +30,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="nayutalienx/mainpage" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

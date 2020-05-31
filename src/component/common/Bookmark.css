@@ -1,0 +1,14 @@
+.bookmark {
+    height: 30px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.bookmark a {
+    display: inline-block;
+    vertical-align: middle;
+
+    font-size: 15px;
+    font-weight: bolder;
+}
+
