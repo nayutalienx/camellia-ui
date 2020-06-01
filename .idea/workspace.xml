@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b183be8-377a-49e9-9b53-3b2621fa4c73" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/component/body/footer/Footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/body/section/forum-info/ForumInfo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/body/section/forum-info/ForumInfo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/body/section/forum-info/ForumInfoItem.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/body/section/forum-info/ForumInfoItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/body/section/sections-main/sections-button/SectionsButton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/body/section/sections-main/sections-button/SectionsButton.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/body/footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/header/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/header/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/body/Body.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/body/Body.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/body/section/Sections.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/body/section/Sections.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/body/section/sections-main/SectionsMain.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/body/section/sections-main/SectionsMain.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/body/section/sections-main/SectionsMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/body/section/sections-main/SectionsMain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/body/section/user-mini-info/UserMiniInfoItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/body/section/user-mini-info/UserMiniInfoItem.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/common/Bookmark.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/common/Bookmark.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +33,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1ce5h9OTRGoWEKfowMRCQAwbp5C" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -68,11 +58,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\что-то осознанное\camellia-ui\src\component\header" />
       <recent name="D:\что-то осознанное\camellia-ui\src\component\body\footer" />
       <recent name="D:\что-то осознанное\camellia-ui\src\component\body\section\userminiinfo" />
       <recent name="D:\что-то осознанное\camellia-ui\src\component\body\section" />
       <recent name="D:\что-то осознанное\camellia-ui\src\component\body\trend" />
-      <recent name="D:\что-то осознанное\camellia-ui\src\component\body" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -102,6 +92,7 @@
       <updated>1590876334985</updated>
       <workItem from="1590876337189" duration="6113000" />
       <workItem from="1590909247112" duration="13688000" />
+      <workItem from="1591026715003" duration="7608000" />
     </task>
     <task id="LOCAL-00001" summary="Сделал структуру проекта + простую шапку">
       <created>1590882309585</created>
@@ -117,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590924412613</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Доделал мэин боди и футер">
+      <created>1590945844215</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590945844216</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,7 +125,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Сделал структуру проекта + простую шапку" />
     <MESSAGE value="Расширил структуру, добавил тренды, мини инфо пользователя + начал работу над главной секцией" />
-    <option name="LAST_COMMIT_MESSAGE" value="Расширил структуру, добавил тренды, мини инфо пользователя + начал работу над главной секцией" />
+    <MESSAGE value="Доделал мэин боди и футер" />
+    <option name="LAST_COMMIT_MESSAGE" value="Доделал мэин боди и футер" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -136,25 +135,41 @@
       <screen x="-1920" y="0" width="1920" height="1050" />
     </state>
     <state x="-1335" y="118" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1590924410758" />
-    <state width="1899" height="310" key="GridCell.Tab.0.bottom" timestamp="1590924528335">
-      <screen x="-1920" y="0" width="1920" height="1050" />
+    <state width="1899" height="486" key="GridCell.Tab.0.bottom" timestamp="1591035634890">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1899" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1590924528335" />
-    <state width="1899" height="310" key="GridCell.Tab.0.center" timestamp="1590924528334">
-      <screen x="-1920" y="0" width="1920" height="1050" />
+    <state width="1899" height="486" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1591035634890" />
+    <state width="1899" height="486" key="GridCell.Tab.0.center" timestamp="1591035634890">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1899" height="310" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1590924528334" />
-    <state width="1899" height="310" key="GridCell.Tab.0.left" timestamp="1590924528334">
-      <screen x="-1920" y="0" width="1920" height="1050" />
+    <state width="1899" height="486" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1591035634890" />
+    <state width="1899" height="486" key="GridCell.Tab.0.left" timestamp="1591035634890">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1899" height="310" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1590924528334" />
-    <state width="1899" height="310" key="GridCell.Tab.0.right" timestamp="1590924528334">
-      <screen x="-1920" y="0" width="1920" height="1050" />
+    <state width="1899" height="486" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1591035634890" />
+    <state width="1899" height="486" key="GridCell.Tab.0.right" timestamp="1591035634890">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1899" height="310" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1590924528334" />
+    <state width="1899" height="486" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1591035634890" />
+    <state x="789" y="235" key="RollbackChangesDialog" timestamp="1591035353809">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="789" y="235" key="RollbackChangesDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1591035353809" />
+    <state x="-1173" y="240" key="VCS.ChangeListViewerDialog" timestamp="1590945895861">
+      <screen x="-1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="-1173" y="240" key="VCS.ChangeListViewerDialog/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1590945895861" />
     <state x="-1368" y="257" key="Vcs.Push.Dialog.v2" timestamp="1590925892959">
       <screen x="-1920" y="0" width="1920" height="1050" />
     </state>
     <state x="-1368" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1590925892959" />
+    <state x="-1151" y="441" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590945899896">
+      <screen x="-1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="-1151" y="441" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1590945899896" />
   </component>
 </project>
