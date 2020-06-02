@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b183be8-377a-49e9-9b53-3b2621fa4c73" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/component/profile/UserProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/header/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/header/Header.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -131,30 +132,38 @@
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1591129447052">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1591129447052" />
     <state x="-1335" y="118" key="CommitChangelistDialog2" timestamp="1590924410758">
       <screen x="-1920" y="0" width="1920" height="1050" />
     </state>
     <state x="-1335" y="118" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1590924410758" />
-    <state width="1899" height="486" key="GridCell.Tab.0.bottom" timestamp="1591035634890">
+    <state x="92" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1591128202376">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="92" y="92" width="1736" height="866" key="DiffContextDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1591128202376" />
+    <state width="1899" height="196" key="GridCell.Tab.0.bottom" timestamp="1591128385163">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1899" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1590924528335" />
-    <state width="1899" height="486" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1591035634890" />
-    <state width="1899" height="486" key="GridCell.Tab.0.center" timestamp="1591035634890">
+    <state width="1899" height="196" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1591128385163" />
+    <state width="1899" height="196" key="GridCell.Tab.0.center" timestamp="1591128385163">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1899" height="310" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1590924528334" />
-    <state width="1899" height="486" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1591035634890" />
-    <state width="1899" height="486" key="GridCell.Tab.0.left" timestamp="1591035634890">
+    <state width="1899" height="196" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1591128385163" />
+    <state width="1899" height="196" key="GridCell.Tab.0.left" timestamp="1591128385162">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1899" height="310" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1590924528334" />
-    <state width="1899" height="486" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1591035634890" />
-    <state width="1899" height="486" key="GridCell.Tab.0.right" timestamp="1591035634890">
+    <state width="1899" height="196" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1591128385162" />
+    <state width="1899" height="196" key="GridCell.Tab.0.right" timestamp="1591128385163">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1899" height="310" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1590924528334" />
-    <state width="1899" height="486" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1591035634890" />
+    <state width="1899" height="196" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1591128385163" />
     <state x="789" y="235" key="RollbackChangesDialog" timestamp="1591035353809">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
