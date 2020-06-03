@@ -1,60 +1,47 @@
-.header {
+#header {
     height: 50px;
-    background: black;
-    color: aliceblue;
-    padding: 5px;
-    padding-left: 100px;
-    padding-right: 100px;
-    font-family: "Yu Gothic UI Light";
-    font-size: 25px;
+    background: #18130D;
+    color: #bab5a1;
 }
 
-.header-item:hover {
-    cursor: pointer;
+.header-item {
+    font-family: "Segoe UI Light";
+    align-self: center;
 }
 
-.header-logo {
-    width: 60px;
+#search-bar{
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background: #453F35;
+    width: 100%;
+    outline: none;
+    color: #bab5a1;
+    padding-left: 10px;
 }
 
-.header-search {
-    font-size: 25px;
-    padding-left: 35px;
-    background-image: url("https://cdn2.iconfinder.com/data/icons/font-awesome/1792/search-512.png");
-    background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: left;
-
+#search-bar::placeholder {
+    color: #bab5a1;
 }
 
-.header-item:hover {
-    display: block;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    color: darkorange;
+#header-profile-bar {
+    padding-left: 10px;
+    padding-top: 10px;
+    height: inherit;
+    background: #453F35;
 
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+#user-photo{
+    margin-right: 10px;
+    height: 80%;
 }
 
-.dropdown-content-item:hover {
-    background: #E8EBEF;
-}
-
-.dropdown-content-item {
-
+#profile-link{
+    float: right;
+    font-size: 20px;
+    margin-right: 10px;
 }
