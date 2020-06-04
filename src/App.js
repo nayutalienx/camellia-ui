@@ -12,8 +12,8 @@ function App() {
         <Router>
             <Header/>
             <div className="App">
-                {/*<Route path="/home" exact component={Home}/>*/}
-                {/*<Route path="/me" exact component={Me}/>*/}
+                <Route path="/home" exact component={Home}/>
+                <Route path="/me" exact component={Me}/>
             </div>
         </Router>
     );

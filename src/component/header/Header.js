@@ -21,13 +21,15 @@ class Header extends React.Component {
             <div className="d-flex justify-content-between" id="header">
 
 
-                <div className="header-item" id="logo-text">
-                    <img src={logo} style={{
-                        "width": "100%",
-                        "height": "auto",
-                        "max-width": "150px",
-                        "margin-left": "10px"
-                    }}/>
+                <div className="header-item" id="logo">
+                    <Link to="/home">
+                        <img src={logo} style={{
+                            "width": "100%",
+                            "height": "auto",
+                            "max-width": "150px",
+                            "margin-left": "10px"
+                        }}/>
+                    </Link>
                 </div>
 
                 <div className="header-item w-50">
@@ -36,10 +38,37 @@ class Header extends React.Component {
 
                 <div className="header-item" id="header-profile-bar">
 
-                    <img src={userPhoto} id="user-photo"/>
-                    <div id="profile-link">Мой профиль</div>
+                    <img src={userPhoto} className="icon-photo"/>
+                    <div id="profile-link">nayutalienx</div>
+
+                    <div id="profile-dropdown">
+
+                        <div className="profile-dropdown-item">
+                            <Link to="/me" style={{
+                                textDecoration: 'inherit',
+                                color: 'inherit'
+                            }}>
+                                <img src="https://img.icons8.com/ios-glyphs/90/000000/block-breaker.png"
+                                     className="icon-photo dropdown-item-photo"/>
+                                <div className="profile-dropdown-item-text">Мои игры</div>
+                            </Link>
+                        </div>
+
+                        <div className="profile-dropdown-item">
+                            <img src="https://img.icons8.com/ios-glyphs/90/000000/xbox-menu.png"
+                                 className="icon-photo dropdown-item-photo"/>
+                            <div className="profile-dropdown-item-text">Настройки</div>
+                        </div>
+
+                        <div className="profile-dropdown-item">
+                            <img src="https://img.icons8.com/ios-glyphs/90/000000/pixel-arrow.png"
+                                 className="icon-photo dropdown-item-photo"/>
+                            <div className="profile-dropdown-item-text">Выход</div>
+                        </div>
+                    </div>
 
                 </div>
+
             </div>
         );
     }
