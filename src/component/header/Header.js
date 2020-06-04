@@ -1,6 +1,7 @@
 import React from "react";
 import './Header.css'
-import logo from '../../logo.svg';
+import logo from '../../camellialogo.png';
+import userPhoto from '../../user.jpg'
 import "bootstrap/dist/css/bootstrap.min.css"
 import {Link} from "react-router-dom";
 
@@ -17,25 +18,58 @@ class Header extends React.Component {
     render() {
 
         return (
-            <header className="d-flex justify-content-around header">
-                <img src={logo} className="header-logo"/>
+            <div className="d-flex justify-content-between" id="header">
 
-                <div className="header-item align-self-center">
-                    <Link to="/home">Основная</Link>
+
+                <div className="header-item" id="logo">
+                    <Link to="/home">
+                        <img src={logo} style={{
+                            "width": "100%",
+                            "height": "auto",
+                            "max-width": "150px",
+                            "margin-left": "10px"
+                        }}/>
+                    </Link>
                 </div>
 
-                <input className="flex-fill ml-2 mr-2 header-search" placeholder="Поиск ..."/>
+                <div className="header-item w-50">
+                    <input type="text" id="search-bar" placeholder="Поиск"/>
+                </div>
 
-                <img src={logo} className="header-logo"/>
-                <div className="header-item align-self-center dropdown">
-                    Мой профиль
-                    <div className="dropdown-content">
-                        <div className="dropdown-content-item"><Link to="/me">Мои игры</Link></div>
-                        <div className="dropdown-content-item">Настройки</div>
-                        <div className="dropdown-content-item">Выход</div>
+                <div className="header-item" id="header-profile-bar">
+
+                    <img src={userPhoto} className="icon-photo"/>
+                    <div id="profile-link">nayutalienx</div>
+
+                    <div id="profile-dropdown">
+
+                        <div className="profile-dropdown-item">
+                            <Link to="/me" style={{
+                                textDecoration: 'inherit',
+                                color: 'inherit'
+                            }}>
+                                <img src="https://img.icons8.com/ios-glyphs/90/000000/block-breaker.png"
+                                     className="icon-photo dropdown-item-photo"/>
+                                <div className="profile-dropdown-item-text">Мои игры</div>
+                            </Link>
+                        </div>
+
+                        <div className="profile-dropdown-item">
+                            <img src="https://img.icons8.com/ios-glyphs/90/000000/xbox-menu.png"
+                                 className="icon-photo dropdown-item-photo"/>
+                            <div className="profile-dropdown-item-text">Настройки</div>
+                        </div>
+
+                        <div className="profile-dropdown-item">
+                            <img src="https://img.icons8.com/ios-glyphs/90/000000/pixel-arrow.png"
+                                 className="icon-photo dropdown-item-photo"/>
+                            <div className="profile-dropdown-item-text">Выход</div>
+                        </div>
                     </div>
+
                 </div>
-            </header>
+
+            </div>
         );
     }
 

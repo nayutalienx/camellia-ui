@@ -1,60 +1,116 @@
-.header {
-    height: 50px;
-    background: black;
-    color: aliceblue;
-    padding: 5px;
-    padding-left: 100px;
-    padding-right: 100px;
-    font-family: "Yu Gothic UI Light";
-    font-size: 25px;
+
+* {
+    /*border: darkorange solid 1px;*/
 }
 
-.header-item:hover {
+#header {
+    height: 50px;
+    background: #18130D;
+    color: #bab5a1;
+}
+
+#logo:hover {
     cursor: pointer;
 }
 
-.header-logo {
-    width: 60px;
+.header-item {
+    font-family: "Segoe UI Light";
+    align-self: center;
 }
 
-.header-search {
-    font-size: 25px;
-    padding-left: 35px;
-    background-image: url("https://cdn2.iconfinder.com/data/icons/font-awesome/1792/search-512.png");
-    background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: left;
+#search-bar{
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background: #453F35;
+    width: 100%;
+    outline: none;
+    color: #bab5a1;
+    padding-left: 10px;
+}
+
+#search-bar::placeholder {
+    color: #bab5a1;
+}
+
+#header-profile-bar {
+    padding-top: 10px;
+    height: inherit;
+    background: #453F35;
+    margin-right: 30px;
+    min-width: 150px;
 
 }
 
-.header-item:hover {
-    display: block;
+#header-profile-bar:hover {
+    background: #DCD8C0;
+    cursor: default;
+    color: #18130D;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
+.icon-photo{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 80%;
 }
 
-.dropdown-content {
+.dropdown-item-photo {
+    float: left;
+}
+
+#profile-link{
+    float: right;
+    font-size: 20px;
+    margin-right: 10px;
+    display: inherit;
+    min-width: 50%;
+}
+
+#profile-dropdown {
+    background: #DCD8C0;
+    color: #18130D;
+
     display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    color: darkorange;
-
+    position: relative;
+    top: 8px;
 }
 
-.dropdown:hover .dropdown-content {
+#header-profile-bar:hover #profile-dropdown {
     display: block;
 }
 
-.dropdown-content-item:hover {
-    background: #E8EBEF;
+.profile-dropdown-item {
+    padding-top: 5px;
+    font-size: 20px;
+    height: 40px;
 }
 
-.dropdown-content-item {
+.profile-dropdown-item:hover {
+    background: #edebde;
+    cursor: pointer;
+}
 
+@media screen and (max-width: 840px) {
+
+    #header-profile-bar {
+        background: #DCD8C0;
+        margin-right: 0px;
+        min-width: initial;
+    }
+
+    #profile-link {
+        display: none;
+    }
+
+    #profile-dropdown{
+        display: block;
+        float: none;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        width: 100%;
+    }
 }

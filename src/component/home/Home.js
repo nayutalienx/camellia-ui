@@ -1,10 +1,10 @@
 import * as React from "react";
-import './Body.css'
+import './Home.css'
 import TrendFeed from "./trend/TrendFeed";
 import Sections from "./section/Sections";
 import Footer from "./footer/Footer";
 
-class Body extends React.Component {
+class Home extends React.Component {
 
     constructor() {
         super();
@@ -13,7 +13,7 @@ class Body extends React.Component {
 
     render() {
         return (
-            <div className="body">
+            <div>
                 <TrendFeed/>
                 <Sections/>
                 <Footer/>
@@ -23,4 +23,4 @@ class Body extends React.Component {
 
 }
 
-export default Body
+export default Home

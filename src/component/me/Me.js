@@ -1,7 +1,6 @@
 import * as React from "react";
-import Header from "../header/Header";
 
-class UserProfile extends React.Component {
+class Me extends React.Component {
 
     constructor(props) {
         super(props);
@@ -11,7 +10,7 @@ class UserProfile extends React.Component {
     render() {
         return (
             <div>
-                <Header/>
+
                 <h4>Hi, this is UserProfile!</h4>
             </div>
         );
@@ -19,4 +18,4 @@ class UserProfile extends React.Component {
 
 }
 
-export default UserProfile
+export default Me
