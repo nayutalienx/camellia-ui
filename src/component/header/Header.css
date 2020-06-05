@@ -76,6 +76,7 @@
     display: none;
     position: relative;
     top: 8px;
+    z-index: 1;
 }
 
 #header-profile-bar:hover #profile-dropdown {

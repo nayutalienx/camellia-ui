@@ -1,14 +1,9 @@
 .bookmark {
-    height: 30px;
-    padding-left: 10px;
-    margin-bottom: 10px;
+    font-family: "Segoe UI Semibold";
+    font-size: 18px;
+    border-top: #453F35 solid 2px;
+    border-bottom: #453F35 solid 2px;
+    text-shadow: 0.1rem 0.1rem 0 #bab5a1;
+    min-width: 245px;
+
 }
-
-.bookmark a {
-    display: inline-block;
-    vertical-align: middle;
-
-    font-size: 15px;
-    font-weight: bolder;
-}
-
