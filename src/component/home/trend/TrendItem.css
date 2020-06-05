@@ -3,3 +3,11 @@
     width: 120px;
     height: 170px;
 }
+
+.trend-item-text {
+    font-family: "Segoe UI Semibold";
+    max-width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

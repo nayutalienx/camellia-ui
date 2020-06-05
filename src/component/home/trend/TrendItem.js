@@ -15,10 +15,12 @@ class TrendItem extends React.Component {
     render(props) {
         return (
             <div className="trend-item">
-                <img src="https://cdn.getdroidtips.com/wp-content/uploads/2020/04/csgo-d3d-error-fix.jpg"
+                <img src={this.props.imgUrl}
                      className="trend-item-image"/>
                 <br/>
-                game {this.props.name}
+                <div className="trend-item-text">
+                    {this.props.name}
+                </div>
             </div>
         )
     }

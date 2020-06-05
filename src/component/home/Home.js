@@ -1,8 +1,6 @@
 import * as React from "react";
 import './Home.css'
 import TrendFeed from "./trend/TrendFeed";
-import Sections from "./section/Sections";
-import Footer from "./footer/Footer";
 
 class Home extends React.Component {
 
@@ -13,10 +11,10 @@ class Home extends React.Component {
 
     render() {
         return (
-            <div>
+            <div id="home">
                 <TrendFeed/>
-                <Sections/>
-                <Footer/>
+                {/*<Sections/>*/}
+                {/*<Footer/>*/}
             </div>
         )
     }
