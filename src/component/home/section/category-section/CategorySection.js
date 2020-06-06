@@ -25,7 +25,7 @@ class CategorySection extends React.Component {
                     </div>
                 </div>
 
-                <button class="category-section-button">
+                <button className="category-section-button">
                     <div className="category-section-button-text">
                         Новинки
                     </div>

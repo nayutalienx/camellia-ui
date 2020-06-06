@@ -1,13 +1,81 @@
 import * as React from "react";
 import './DevelopBlog.css'
 import Bookmark from "../../../common/Bookmark";
-import userPic from "../../../../user.jpg"
 
 class DevelopBlog extends React.Component {
 
     constructor() {
         super();
-        this.state = {}
+        this.state = {
+            lastCommit: {
+                author: "Загрузка...",
+                date: "Загрузка...",
+                message: "Загрузка...",
+                imgUrl: "none"
+            }
+        }
+    }
+
+
+    componentDidMount() {
+
+
+        let half = new Date().toISOString().substring(0, 10)
+        half = half + "T00:00:00.000Z"
+
+        fetch("https://api.github.com/repos/nayutalienx/camellia-ui/commits?since=" + half)
+            .then(res => res.json())
+            .then(
+                (result) => {
+                    let message
+                    let date
+                    let author
+                    for (let commit of result) {
+                        if (!commit.commit.message.toString().includes("Merge pull request")) {
+                            message = commit.commit.message.toString()
+                            date = commit.commit.author.date.toString()
+                            let toParseDate = new Date(date)
+                            date = toParseDate.toLocaleString().substring(0, 10)
+                            author = commit.commit.author.name
+
+                            fetch("https://api.github.com/search/users?q=" + author).then(res => res.json())
+                                .then(
+                                    result => {
+                                        let imgUrl = result.items[0].avatar_url
+                                        this.setState(prevState => {
+                                            return (
+                                                {
+                                                    lastCommit: {
+                                                        message: prevState.lastCommit.message,
+                                                        author: prevState.lastCommit.author,
+                                                        date: prevState.lastCommit.date,
+                                                        imgUrl: imgUrl
+                                                    }
+                                                }
+                                            )
+                                        })
+                                    }
+                                )
+
+
+                            break;
+                        }
+                    }
+                    this.setState(prevState => {
+                        return (
+                            {
+                                lastCommit: {
+                                    message: message,
+                                    author: author,
+                                    date: date,
+                                    imgUrl: prevState.lastCommit.imgUrl
+                                }
+                            }
+                        )
+                    })
+                }
+            )
+
     }
 
     render() {
@@ -17,6 +85,10 @@ class DevelopBlog extends React.Component {
                 <sub>месяцев: 0 дней: 7</sub>
             </div>
         )
+
+
+        let displayImg = this.state.lastCommit.imgUrl == "none" ? null : this.state.lastCommit.imgUrl
+        console.log(displayImg)
 
         return (
             <div className="develop-blog">
@@ -61,13 +133,16 @@ class DevelopBlog extends React.Component {
 
                         <div className="develop-blog-content-changes-commit">
                             <div className="develop-blog-content-changes-commit-text">
-                                Переделал букмарк, реализовал адаптивный хидер
+                                {this.state.lastCommit.message}
                             </div>
 
                             <div className="develop-blog-content-changes-author">
-                                <img src={userPic} id="develop-blog-content-changes-author-ava"/>
+                                <img src={displayImg} id="develop-blog-content-changes-author-ava"/>
                                 <div>
-                                    nayutalienx commited 15 hours ago
+                                    {this.state.lastCommit.author}
+                                </div>
+                                <div>
+                                    {this.state.lastCommit.date}
                                 </div>
                             </div>
 

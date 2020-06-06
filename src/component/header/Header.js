@@ -24,10 +24,10 @@ class Header extends React.Component {
                 <div className="header-item" id="logo">
                     <Link to="/">
                         <img src={logo} style={{
-                            "width": "100%",
-                            "height": "auto",
-                            "max-width": "150px",
-                            "margin-left": "10px"
+                            width: "100%",
+                            height: "auto",
+                            maxWidth: "150px",
+                            marginLeft: "10px"
                         }}/>
                     </Link>
                 </div>
