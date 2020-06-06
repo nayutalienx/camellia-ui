@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/camellia-ui/precache-manifest.ceddebb35fea136eb5cd5ac0bd1e0907.js"
+  "/camellia-ui/precache-manifest.beb10cd68030568f6bb5c346a28c7d6a.js"
 );
 
 self.addEventListener('message', (event) => {
