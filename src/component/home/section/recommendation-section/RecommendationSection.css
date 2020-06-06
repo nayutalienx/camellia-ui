@@ -1,0 +1,22 @@
+.recommendation-section {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.recommendation-section > .bookmark {
+    margin-top: 15px;
+    min-width: 127px;
+    min-height: 40px;
+}
+
+.recommendation-section > .bookmark > div:first-child {
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 410px) {
+
+    .recommendation-section > .bookmark {
+        margin-top: 10px;
+    }
+}

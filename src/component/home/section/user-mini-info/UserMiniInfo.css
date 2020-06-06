@@ -1,15 +1,49 @@
 .user-mini-info {
-
-    height: 260px;
-
-    background: #e9f7fb;
-    border: 1px solid rgba(144, 213, 236, 0.45);
-
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-right: 5px;
-
-    width: 260px;
+    width: 40%;
+    background: #DED9C0;
+    font-family: "Helvetica";
 
 }
 
+#user-mini-info-header {
+
+    background: #453F35;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.2rem;
+    color: #DED9C0;
+}
+
+#user-mini-info-content {
+    padding: 0 5px;
+}
+
+.user-mini-info-item {
+    display: flex;
+    justify-content: space-between;
+    min-width: 200px;
+}
+
+#user-mini-info-item-history {
+    margin-top: 15px;
+}
+
+#user-mini-info-item-history > div:first-child {
+    border-bottom: #453F35 solid 1px;
+}
+
+#user-mini-info-item-history > .user-mini-info-item > div:first-child {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+    margin-right: 5px;
+}
+
+#user-mini-info-item-history > .user-mini-info-item > div:last-child {
+    font-size: 12px;
+    color: #453F35;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

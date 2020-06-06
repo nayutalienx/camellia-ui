@@ -12,7 +12,9 @@ class Bookmark extends React.Component {
 
         return (
             <div className="bookmark">
-                {this.props.text}
+                <div>
+                    {this.props.text}
+                </div>
             </div>
         )
     }
