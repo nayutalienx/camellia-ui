@@ -1,6 +1,5 @@
 import * as React from "react";
 import "./UserMiniInfo.css"
-import UserMiniInfoItem from "./UserMiniInfoItem";
 
 
 class UserMiniInfo extends React.Component {
@@ -12,21 +11,71 @@ class UserMiniInfo extends React.Component {
     render() {
         return (
             <div className="user-mini-info">
+                <div id="user-mini-info-header">
+                    Мой список игр
+                </div>
+                <div id="user-mini-info-content">
+                    <div className="user-mini-info-item">
+                        <div>
+                            Запланировано
+                        </div>
+                        <div>
+                            10
+                        </div>
+                    </div>
 
-                <p className="font-weight-bold m-0">Мой список игр</p>
+                    <div className="user-mini-info-item">
+                        <div>
+                            Пройдено
+                        </div>
+                        <div>
+                            566
+                        </div>
+                    </div>
 
-                <UserMiniInfoItem name="Запланировано" count="10"/>
-                <UserMiniInfoItem name="Играю" count="22"/>
-                <UserMiniInfoItem name="Переигрываю" count="22"/>
-                <UserMiniInfoItem name="Пройдено" count="22"/>
-                <UserMiniInfoItem name="Отложено" count="22"/>
-                <UserMiniInfoItem name="Брошено" count="22"/>
+                    <div className="user-mini-info-item">
+                        <div>
+                            Брошено
+                        </div>
+                        <div>
+                            47
+                        </div>
+                    </div>
 
-                <p className="font-weight-bold m-0 mt-2">Моя история</p>
-                <UserMiniInfoItem name="GTA San Andreas" count="2 дня назад"/>
-                <UserMiniInfoItem name="Valorant" count="5 дней назад"/>
-                <UserMiniInfoItem name="Nier:Automata" count="Месяц назад"/>
+                    <div className="user-mini-info-item">
+                        <div>
+                            Переигрываю
+                        </div>
+                        <div>
+                            5
+                        </div>
+                    </div>
 
+                    <div className="user-mini-info-item">
+                        <div>
+                            Отложено
+                        </div>
+                        <div>
+                            15
+                        </div>
+                    </div>
+
+                    <div id="user-mini-info-item-history">
+                        <div>Моя история</div>
+                        <div className="user-mini-info-item">
+                            <div>Life is Strange</div>
+                            <div>254 месяца назад</div>
+                        </div>
+                        <div className="user-mini-info-item">
+                            <div>Fallout 4</div>
+                            <div>4 дня назад</div>
+                        </div>
+                        <div className="user-mini-info-item">
+                            <div>Metro Exodus</div>
+                            <div>2 месяца назад</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }

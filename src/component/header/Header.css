@@ -106,12 +106,26 @@
         display: none;
     }
 
-    #profile-dropdown{
+    #profile-dropdown {
         display: block;
         float: none;
         position: absolute;
         left: 0;
         top: 50px;
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    #logo {
+        display: none;
+    }
+
+    #search-bar {
+        margin-left: 10px;
+    }
+
+    .profile-dropdown-item {
+        min-width: 160px;
     }
 }

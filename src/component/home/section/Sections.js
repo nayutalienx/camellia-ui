@@ -1,8 +1,10 @@
 import * as React from "react";
 import UserMiniInfo from "./user-mini-info/UserMiniInfo";
 import "./Sections.css"
-import SectionsMain from "./sections-main/SectionsMain";
-import ForumInfo from "./forum-info/ForumInfo";
+
+import DevelopBlog from "./develop-blog/DevelopBlog";
+import CategorySection from "./category-section/CategorySection";
+import RecommendationSection from "./recommendation-section/RecommendationSection";
 
 
 class Sections extends React.Component {
@@ -14,10 +16,11 @@ class Sections extends React.Component {
 
     render() {
         return (
-            <div className="d-flex sections">
+            <div className="sections">
                 <UserMiniInfo/>
-                <SectionsMain/>
-                <ForumInfo/>
+                <CategorySection/>
+                <RecommendationSection/>
+                <DevelopBlog/>
             </div>
         )
     }

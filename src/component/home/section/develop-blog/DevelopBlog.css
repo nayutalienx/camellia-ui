@@ -1,0 +1,118 @@
+.develop-blog {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.develop-blog > .bookmark {
+    margin-top: 15px;
+    min-height: 40px;
+    min-width: 0;
+}
+
+.develop-blog > .bookmark > div:first-child {
+    margin-top: 5px;
+}
+
+.develop-blog > .bookmark > div > div > sub {
+    float: right;
+    margin-top: 20px;
+    font-size: 8px;
+}
+
+#develop-blog-content {
+    margin-top: 10px;
+    background: #DED9C0;
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Helvetica";
+    padding: 5px;
+}
+
+.develop-blog-content-post {
+    display: flex;
+    flex-direction: column;
+}
+
+.develop-blog-content-post:nth-child(2) {
+    margin-top: 10px;
+}
+
+
+.develop-blog-content-post-preheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 10px;
+}
+
+.develop-blog-content-post-preheader-topic {
+    padding: 0 5px;
+    background: #453F35;
+    color: #DED9C0;
+}
+
+.develop-blog-content-post-header {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    font-size: 13px;
+}
+
+.develop-blog-content-changes {
+    margin-top: 10px;
+}
+
+.develop-blog-content-changes-header {
+    font-size: 13px;
+    border-bottom: #453F35 solid 1px;
+}
+
+.develop-blog-content-changes-commit {
+    display: flex;
+    flex-direction: column;
+}
+
+.develop-blog-content-changes-commit-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    font-size: 13px;
+}
+
+.develop-blog-content-changes-author {
+    font-size: 13px;
+    display: flex;
+}
+
+.develop-blog-content-changes-author > div:last-child {
+    margin-left: 5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#develop-blog-content-changes-author-ava {
+    height: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    .develop-blog > .bookmark {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .develop-blog > .bookmark {
+        min-width: 245px;
+    }
+}

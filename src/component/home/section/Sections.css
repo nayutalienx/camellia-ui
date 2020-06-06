@@ -1,4 +1,69 @@
 .sections {
     margin-top: 20px;
     padding-left: 15px;
+    padding-right: 15px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    flex-wrap: nowrap;
+}
+
+.sections > div:nth-child(2) {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.sections > div:nth-child(3) {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.sections > div {
+    min-height: 280px;
+}
+
+@media screen and (max-width: 900px) {
+    .sections {
+        flex-wrap: wrap;
+    }
+
+    .sections > div:nth-child(2) {
+        width: 49%;
+        order: -2;
+
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .sections > div:nth-child(3) {
+        width: 49%;
+        order: -1;
+
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .sections > div:first-child {
+        margin-top: 10px;
+        width: 49%;
+    }
+
+    .sections > div:last-child {
+        margin-top: 10px;
+        width: 49%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sections > div:first-child {
+        flex: 0 1 100%;
+        width: initial;
+    }
+
+    .sections > div:last-child {
+        flex: 0 1 100%;
+        width: initial;
+    }
 }
