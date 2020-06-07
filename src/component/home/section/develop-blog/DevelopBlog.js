@@ -2,7 +2,12 @@ import * as React from "react";
 import './DevelopBlog.css'
 import Bookmark from "../../../common/Bookmark";
 
+
 class DevelopBlog extends React.Component {
+
+
+    client_id = "19f8a039944f401672d8"
+    client_secret = "ab2c7f1b2ac0bf142edec51044eb1766945a3265"
 
     constructor() {
         super();
@@ -12,19 +17,38 @@ class DevelopBlog extends React.Component {
                 date: "Загрузка...",
                 message: "Загрузка...",
                 imgUrl: "none"
+            },
+            sinceStart: {
+                month: 0,
+                day: 0
             }
         }
     }
 
 
     componentDidMount() {
-        fetch("https://api.github.com/repos/nayutalienx/camellia-ui/commits")
+
+        let message
+        let date
+        let author
+        // считаем кол-во дней с начала разработки
+        const whenItStarted = new Date(2020, 4, 31, 1, 29)
+        const now = new Date()
+        const differenceInSeconds = (now - whenItStarted) / 1000
+        const days = Math.floor(differenceInSeconds / (3600 * 24));
+
+        // Делаем базовую авторизацию по клиент id и secret для повышения лимита на вызовы api (80 запросов в минуту)
+        var headers = new Headers()
+        const auth = this.client_id + ":" + this.client_secret
+        headers.append("Authorization", "Basic " + btoa(auth));
+
+        // парсим последний коммит
+        fetch("https://api.github.com/repos/nayutalienx/camellia-ui/commits", {
+            headers: headers
+        })
             .then(res => res.json())
             .then(
                 (result) => {
-                    let message
-                    let date
-                    let author
                     for (let commit of result) {
                         if (!commit.commit.message.toString().includes("Merge pull request")) {
                             message = commit.commit.message.toString()
@@ -33,18 +57,39 @@ class DevelopBlog extends React.Component {
                             date = toParseDate.toLocaleString().substring(0, 10)
                             author = commit.commit.author.name
 
-                            fetch("https://api.github.com/search/users?q=" + author).then(res => res.json())
+                            // обновляем стейт с инфой о коммите
+                            this.setState(prevState => {
+                                return (
+                                    {
+                                        lastCommit: {
+                                            message: message,
+                                            author: author,
+                                            date: date,
+                                            imgUrl: prevState.lastCommit.imgUrl
+                                        },
+                                        sinceStart: {
+                                            month: 0,
+                                            day: days
+                                        }
+                                    }
+                                )
+                            })
+
+                            // парсим аву коммитера
+                            fetch("https://api.github.com/search/users?q=" + author, {
+                                headers: headers
+                            }).then(res => res.json())
                                 .then(
                                     result => {
-                                        let imgUrl = result.items[0].avatar_url
+                                        let downloadedImgUrl = result.items[0].avatar_url
+
                                         this.setState(prevState => {
                                             return (
                                                 {
+                                                    ...prevState,
                                                     lastCommit: {
-                                                        message: prevState.lastCommit.message,
-                                                        author: prevState.lastCommit.author,
-                                                        date: prevState.lastCommit.date,
-                                                        imgUrl: imgUrl
+                                                        ...prevState.lastCommit,
+                                                        imgUrl: downloadedImgUrl
                                                     }
                                                 }
                                             )
@@ -52,24 +97,12 @@ class DevelopBlog extends React.Component {
                                     }
                                 )
 
-
                             break;
                         }
                     }
-                    this.setState(prevState => {
-                        return (
-                            {
-                                lastCommit: {
-                                    message: message,
-                                    author: author,
-                                    date: date,
-                                    imgUrl: prevState.lastCommit.imgUrl
-                                }
-                            }
-                        )
-                    })
                 }
             )
+
 
     }
 
@@ -77,7 +110,7 @@ class DevelopBlog extends React.Component {
 
         const header = props => (
             <div>Блог разработки
-                <sub>месяцев: 0 дней: 7</sub>
+                <sub>месяцев: {this.state.sinceStart.month} дней: {this.state.sinceStart.day}</sub>
             </div>
         )
 
