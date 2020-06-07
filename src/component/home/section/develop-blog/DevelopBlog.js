@@ -18,12 +18,7 @@ class DevelopBlog extends React.Component {
 
 
     componentDidMount() {
-
-
-        let half = new Date().toISOString().substring(0, 10)
-        half = half + "T00:00:00.000Z"
-
-        fetch("https://api.github.com/repos/nayutalienx/camellia-ui/commits?since=" + half)
+        fetch("https://api.github.com/repos/nayutalienx/camellia-ui/commits")
             .then(res => res.json())
             .then(
                 (result) => {
