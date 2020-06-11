@@ -4,4 +4,4 @@
 
 # ROADMAP
 
-todo...
+![alt text](https://s8.hostingkartinok.com/uploads/images/2020/06/c6e0ab7c53dbb5fffbc04b0d316811a2.png)
